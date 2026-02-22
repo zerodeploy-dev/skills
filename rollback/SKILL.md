@@ -22,8 +22,10 @@ If not found, ask the user for the org and site names.
 ### 2. List recent deployments
 
 ```bash
-zerodeploy deployments list <site> --org <org> --json
+zerodeploy deployments list --json
 ```
+
+(Org and site are resolved automatically from `zerodeploy.json`. Use `--org <org>` and positional `<site>` to override.)
 
 Show the user the recent deployments so they can choose which one to rollback to.
 
@@ -32,13 +34,13 @@ Show the user the recent deployments so they can choose which one to rollback to
 If the user specified a deployment ID:
 
 ```bash
-zerodeploy rollback <site> --org <org> --to <deployment-id>
+zerodeploy rollback --to <deployment-id>
 ```
 
 Otherwise, rollback to the previous deployment:
 
 ```bash
-zerodeploy rollback <site> --org <org>
+zerodeploy rollback
 ```
 
 ### 4. Verify

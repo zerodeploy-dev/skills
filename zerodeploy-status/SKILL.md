@@ -21,8 +21,10 @@ If not found, ask the user for the org and site names.
 ### 2. Current deployment
 
 ```bash
-zerodeploy deployments list <site> --org <org> --json
+zerodeploy deployments list --json
 ```
+
+(Org and site are resolved automatically from `zerodeploy.json`. Use `--org <org>` and positional `<site>` to override.)
 
 The first entry is the current (active) deployment. Report:
 - Deployment ID
@@ -36,7 +38,7 @@ The first entry is the current (active) deployment. Report:
 If the user asks about traffic:
 
 ```bash
-zerodeploy site stats <site> --org <org> --period 7d
+zerodeploy site stats --period 7d
 ```
 
 ### 4. Site details
@@ -44,7 +46,7 @@ zerodeploy site stats <site> --org <org> --period 7d
 For more info about the site:
 
 ```bash
-zerodeploy site list <org> --json
+zerodeploy site list --json
 ```
 
 ## Summarize
