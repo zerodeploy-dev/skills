@@ -98,7 +98,7 @@ Handle errors by exit code:
 |-----------|---------|--------|
 | 0 | Success | Report the URL to the user |
 | 1 | Auth error | Run `zerodeploy login` |
-| 2 | Not found | Check org/site names |
+| 2 | Not found | Check org/site slugs |
 | 3 | Validation error | Fix the input (check error message) |
 | 4 | Rate limited | Wait a moment and retry |
 | 5 | Server error | Retry, or report to user |
@@ -109,7 +109,7 @@ Handle errors by exit code:
 
 If there's no `zerodeploy.json` and the user hasn't set up a site yet:
 
-1. The CLI will auto-create a site using the folder name as the subdomain
+1. The CLI will auto-create a site using the folder name as the slug
 2. It saves the config to `zerodeploy.json` automatically
 3. No manual setup needed — just run `zerodeploy deploy --json`
 

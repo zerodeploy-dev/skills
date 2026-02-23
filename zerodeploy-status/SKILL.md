@@ -16,7 +16,7 @@ Show deployment status, recent deployments, and analytics for a ZeroDeploy site.
 ### 1. Read config
 
 Check if `zerodeploy.json` exists in the project root. Extract `org` and `site` values.
-If not found, ask the user for the org and site names.
+If not found, ask the user for the org and site slugs.
 
 ### 2. Current deployment
 
@@ -62,7 +62,7 @@ Report to the user:
 | Exit Code | Meaning | Action |
 |-----------|---------|--------|
 | 1 | Auth error | Run `zerodeploy login` |
-| 2 | Not found | Check org/site names in zerodeploy.json |
+| 2 | Not found | Check org/site slugs in zerodeploy.json |
 
 ## Specific request
 $ARGUMENTS

@@ -67,8 +67,8 @@ zerodeploy whoami --json
 
 Report:
 - Logged in as: username
-- Organization: org name
-- Site: site name
+- Organization: org slug
+- Site: site slug
 - Ready to deploy
 
 ## Config File

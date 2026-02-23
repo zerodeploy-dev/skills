@@ -17,7 +17,7 @@ Rollback to a previous deployment version.
 ### 1. Read config
 
 Check if `zerodeploy.json` exists in the project root. Extract `org` and `site` values.
-If not found, ask the user for the org and site names.
+If not found, ask the user for the org and site slugs.
 
 ### 2. List recent deployments
 
@@ -52,7 +52,7 @@ After rollback, confirm the active deployment has changed by checking the site U
 | Exit Code | Meaning | Action |
 |-----------|---------|--------|
 | 1 | Auth error | Run `zerodeploy login` |
-| 2 | Not found | Check org/site names |
+| 2 | Not found | Check org/site slugs |
 | 3 | Validation error | No previous deployment exists |
 
 ## User request
