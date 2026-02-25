@@ -10,7 +10,7 @@ allowed-tools: Bash(zerodeploy *) Bash(npm install *) Bash(npx *) Bash(which *)
 
 # Deploy to ZeroDeploy
 
-Deploy the current project as a static site to ZeroDeploy.
+Deploy the current project to ZeroDeploy.
 
 ## Prerequisites
 
