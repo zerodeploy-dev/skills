@@ -1,5 +1,5 @@
 ---
-name: zerodeploy-status
+name: status
 description: >
   Check ZeroDeploy deployment status, analytics, and site info.
   Use when the user asks about deployment status, site traffic,
@@ -24,7 +24,7 @@ If not found, ask the user for the org and site slugs.
 zerodeploy deployments list --json
 ```
 
-(Org and site are resolved automatically from `zerodeploy.json`. Use `--org <org>` and positional `<site>` to override.)
+(Site is resolved automatically from `zerodeploy.json`. Use positional `<site>` to override.)
 
 The first entry is the current (active) deployment. Report:
 - Deployment ID

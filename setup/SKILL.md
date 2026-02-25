@@ -1,5 +1,5 @@
 ---
-name: zerodeploy-setup
+name: setup
 description: >
   Set up ZeroDeploy for a project. Installs CLI, authenticates,
   and initializes zerodeploy.json config.
@@ -53,11 +53,17 @@ This will:
 - Detect the build output directory
 - Save config to `zerodeploy.json`
 
-If the user wants specific org/site:
+If the user wants a specific site:
 
 ```bash
-zerodeploy init --org <org> --site <site>
+zerodeploy init --site <site>
 ```
+
+Other init options:
+- `--dir <directory>` — Build output directory
+- `--build <command>` — Build command
+- `--ignore <patterns...>` — Glob patterns to ignore during deploy
+- `--force` — Overwrite existing config file
 
 ### 4. Verify setup
 

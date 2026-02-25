@@ -55,6 +55,12 @@ Run the deploy command with JSON output for structured results:
 zerodeploy deploy --json
 ```
 
+Or specify a site explicitly:
+
+```bash
+zerodeploy deploy my-site --json
+```
+
 Parse the JSON output:
 
 **Success:**
@@ -67,7 +73,6 @@ Parse the JSON output:
   "is_preview": false,
   "file_count": 42,
   "total_size_bytes": 1048576,
-  "org": "acme",
   "site": "my-site"
 }
 ```
@@ -84,11 +89,18 @@ Parse the JSON output:
 
 ## Options
 
+- `[site]` — Site slug (positional argument, optional if zerodeploy.json exists)
+- `--org <org>` — Organization slug
 - `--dir <path>` — Directory to deploy (default: auto-detect from framework)
 - `--build` — Run build command before deploying
+- `--no-build` — Skip build step
+- `--build-command <command>` — Override build command
 - `--install` — Run install command before building
 - `--preview` — Create a preview deployment (not set as current)
+- `--prod` — Force production deploy (override auto-preview for PRs)
 - `--append` — Add files to existing deployment instead of replacing
+- `--no-verify` — Skip deployment verification
+- `--no-auto-rollback` — Disable automatic rollback on verification failure
 
 ## Error Handling
 
