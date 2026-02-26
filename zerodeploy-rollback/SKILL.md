@@ -1,5 +1,5 @@
 ---
-name: rollback
+name: zerodeploy-rollback
 description: >
   Rollback a ZeroDeploy deployment to a previous version.
   Use when the user wants to undo a deployment or revert to an

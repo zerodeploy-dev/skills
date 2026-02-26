@@ -12,7 +12,7 @@ claude skills add zerodeploy-dev/skills
 
 | Skill | Description |
 |-------|-------------|
-| `/deploy` | Deploy your project to ZeroDeploy |
-| `/rollback` | Rollback to a previous deployment |
-| `/setup` | Install CLI, authenticate, and create config |
-| `status` | Check deployment status and analytics (auto-invoked) |
+| `/zerodeploy-deploy` | Deploy your project to ZeroDeploy |
+| `/zerodeploy-rollback` | Rollback to a previous deployment |
+| `/zerodeploy-setup` | Install CLI, authenticate, and create config |
+| `zerodeploy-status` | Check deployment status and analytics (auto-invoked) |

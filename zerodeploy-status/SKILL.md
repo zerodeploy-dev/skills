@@ -1,5 +1,5 @@
 ---
-name: status
+name: zerodeploy-status
 description: >
   Check ZeroDeploy deployment status, analytics, and site info.
   Use when the user asks about deployment status, site traffic,

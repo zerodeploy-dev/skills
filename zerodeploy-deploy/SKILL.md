@@ -1,5 +1,5 @@
 ---
-name: deploy
+name: zerodeploy-deploy
 description: >
   Deploy a static site or SPA to ZeroDeploy. Use when the user asks to
   deploy, publish, ship, or host a frontend project. Handles first-time

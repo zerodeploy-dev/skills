@@ -1,5 +1,5 @@
 ---
-name: setup
+name: zerodeploy-setup
 description: >
   Set up ZeroDeploy for a project. Installs CLI, authenticates,
   and initializes zerodeploy.json config.
