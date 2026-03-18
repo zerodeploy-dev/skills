@@ -34,14 +34,16 @@ Show the user the recent deployments so they can choose which one to rollback to
 If the user specified a deployment ID:
 
 ```bash
-zerodeploy rollback --to <deployment-id>
+zerodeploy rollback [site] --to <deployment-id>
 ```
 
 Otherwise, rollback to the previous deployment:
 
 ```bash
-zerodeploy rollback
+zerodeploy rollback [site]
 ```
+
+The `[site]` argument is optional if `zerodeploy.json` exists in the current directory.
 
 ### 4. Verify
 

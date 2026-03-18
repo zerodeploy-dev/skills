@@ -12,7 +12,8 @@ claude skills add zerodeploy-dev/skills
 
 | Skill | Description |
 |-------|-------------|
-| `/zerodeploy-deploy` | Deploy your project to ZeroDeploy |
+| `/zerodeploy-drop` | Deploy temporary sites with one HTTP call (no auth required) |
+| `/zerodeploy-deploy` | Deploy your project to ZeroDeploy using the CLI |
 | `/zerodeploy-rollback` | Rollback to a previous deployment |
 | `/zerodeploy-setup` | Install CLI, authenticate, and create config |
 | `zerodeploy-status` | Check deployment status and analytics (auto-invoked) |

@@ -38,8 +38,10 @@ The first entry is the current (active) deployment. Report:
 If the user asks about traffic:
 
 ```bash
-zerodeploy site stats --period 7d
+zerodeploy site stats --period 7d --json
 ```
+
+Valid periods: `24h`, `7d`, `30d` (default: `7d`)
 
 ### 4. Site details
 

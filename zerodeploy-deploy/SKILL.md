@@ -102,6 +102,17 @@ Parse the JSON output:
 - `--no-verify` — Skip deployment verification
 - `--no-auto-rollback` — Disable automatic rollback on verification failure
 
+### GitHub Actions Options
+
+For CI/CD environments (GitHub Actions, GitLab CI, etc.):
+
+- `--pr <number>` — PR number for preview deployments
+- `--pr-title <title>` — PR title to display in deployment info
+- `--commit <sha>` — Commit SHA for deployment tracking
+- `--commit-message <message>` — Commit message to display
+- `--branch <branch>` — Branch name for deployment context
+- `--github-output` — Output deployment info in GitHub Actions format (for GITHUB_OUTPUT)
+
 ## Error Handling
 
 Handle errors by exit code:
@@ -138,6 +149,26 @@ Or build and install dependencies:
 ```bash
 zerodeploy deploy --build --install --json
 ```
+
+## Subcommands
+
+The `deploy` command also supports these subcommands:
+
+### List Deployments
+
+```bash
+zerodeploy deploy list [site] --limit 10
+```
+
+Lists recent deployments (alias for `zerodeploy deployments list`).
+
+### Promote Preview to Production
+
+```bash
+zerodeploy deploy promote [deploymentId] --site <site> --json
+```
+
+Promotes a preview deployment to production. If no deploymentId is provided, promotes the latest preview.
 
 ## Additional context from user
 $ARGUMENTS
